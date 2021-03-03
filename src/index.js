@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import AppFunc from './AppFunc';
+import AppRefactor from './AppRefactor';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <AppFunc /> */}
+    <AppRefactor />
   </React.StrictMode>,
   document.getElementById('root')
 );
