@@ -1,10 +1,22 @@
 import ListItem from './ListItem';
 
-function Container(props) {
+function Container({
+  list,
+  handleDelete,
+  handleEdit,
+  handleToggle
+}) {
   return (
     <ul>
-      {props.list.map((item, index) => (
-        <ListItem key={index} item={item} />
+      {list.map((item, index) => (
+        <ListItem
+          key={index}
+          item={item}
+          handleDelete={handleDelete}
+          index={index}
+          handleEdit={handleEdit}
+          handleToggle={handleToggle}
+        />
       ))}
     </ul>
   );
